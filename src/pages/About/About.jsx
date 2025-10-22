@@ -22,10 +22,10 @@ const About = () => {
     "/about/IMG_9983.JPG",
   ];
 
-  // Function to get 6 random unique images
+  // Function to get 6 random unique images with proper paths
   const getRandomImages = () => {
     const shuffled = [...availableImages].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 6);
+    return shuffled.slice(0, 6).map(img => getImagePath(img));
   };
 
   const [toolImages, setToolImages] = useState(getRandomImages());
