@@ -257,4 +257,18 @@
     flex-direction: column;
     gap: 1em;
   }
+
+  .about-hero-img,
+  .about-banner-img-wrapper {
+    height: 40vh;
+    min-height: 300px;
+  }
+
+  .services-banner {
+    height: 250px;
+  }
+
+  .fav-tool {
+    height: 200px;
+  }
 }

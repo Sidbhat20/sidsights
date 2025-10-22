@@ -120,6 +120,13 @@
 
   .next-project {
     padding: 1.25em;
+    gap: 2em;
+  }
+
+  .project-banner-img,
+  .project-img {
+    height: 40vh;
+    min-height: 300px;
   }
 
   .next-project-img {

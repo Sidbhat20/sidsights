@@ -77,4 +77,23 @@
     width: 100%;
     padding: 0 1.25em;
   }
+
+  .work-carousel {
+    min-height: 90vh;
+  }
+
+  .carousel-info {
+    gap: 2em;
+    padding: 1.25em;
+  }
+
+  .work-slider-img {
+    height: 40vh;
+    max-height: 350px;
+  }
+
+  .work-item {
+    width: 60px;
+    height: 60px;
+  }
 }

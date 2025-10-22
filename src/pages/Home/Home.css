@@ -156,4 +156,15 @@
   .hobby {
     aspect-ratio: 5/3;
   }
+
+  .hero-img {
+    height: 50vh;
+    max-height: 400px;
+  }
+
+  .sticky-titles-nav,
+  .sticky-titles-footer {
+    flex-direction: column;
+    gap: 0.5em;
+  }
 }

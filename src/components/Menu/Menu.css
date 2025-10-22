@@ -174,4 +174,12 @@
   .menu-link-item .menu-link-item-holder a {
     font-size: 16vw;
   }
+
+  .menu-info p {
+    font-size: 4vw;
+  }
+
+  .menu-toggle {
+    z-index: 10001;
+  }
 }

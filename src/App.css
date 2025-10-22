@@ -1,0 +1,17 @@
+/* Smooth scrolling on mobile */
+@media (max-width: 1000px) {
+  .page {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Performance optimization for mobile */
+@media (max-width: 1000px) {
+  img {
+    content-visibility: auto;
+  }
+  
+  video {
+    content-visibility: auto;
+  }
+}

@@ -13,10 +13,19 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: "Messina Sans";
   background-color: var(--bg);
   color: var(--fg);
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 
 img {
@@ -183,5 +192,15 @@ textarea::placeholder {
   h4 {
     font-size: 6vw;
     line-height: 6vw;
+  }
+
+  /* Mobile touch optimizations */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Prevent zoom on input focus on iOS */
+  input, textarea, select {
+    font-size: 16px;
   }
 }
