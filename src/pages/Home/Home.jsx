@@ -7,6 +7,7 @@ import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
 import Reviews from "../../components/Reviews/Reviews";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
+import { getImagePath } from "../../utils/getImagePath";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -138,7 +139,7 @@ const Home = () => {
       <div className="page home">
         <section className="hero">
           <div className="hero-img">
-            <img src="/home/sidbhat.jpg" alt="" />
+            <img src={getImagePath("/home/sidbhat.jpg")} alt="" />
           </div>
 
           <div className="hero-header">

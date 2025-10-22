@@ -4,6 +4,7 @@ import "./About.css";
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
+import { getImagePath } from "../../utils/getImagePath";
 
 import ReactLenis from "lenis/react";
 
@@ -44,7 +45,7 @@ const About = () => {
 
         <section className="about-hero">
           <div className="about-hero-img">
-            <img src="/about/IMG_9850.JPG" alt="" />
+            <img src={getImagePath("/about/IMG_9850.JPG")} alt="" />
           </div>
         </section>
 
@@ -72,7 +73,7 @@ const About = () => {
         </section>        <section className="services">
           <div className="services-col">
             <div className="services-banner">
-              <img src="/about/sidprofile.jpg" alt="" />
+              <img src={getImagePath("/about/sidprofile.jpg")} alt="" />
             </div>
             <p className="primary">Crafted with Intention</p>
           </div>
@@ -131,7 +132,7 @@ const About = () => {
 
         <section className="about-banner-img">
           <div className="about-banner-img-wrapper">
-            <img src="/about/about-banner.jpg" alt="" />
+            <img src={getImagePath("/about/about-banner.jpg")} alt="" />
           </div>
         </section>
 

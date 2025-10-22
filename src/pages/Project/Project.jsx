@@ -3,6 +3,7 @@ import "./Project.css";
 
 import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
+import { getImagePath } from "../../utils/getImagePath";
 
 import ReactLenis from "lenis/react";
 
@@ -27,7 +28,7 @@ const Project = () => {
 
         <section className="project-banner-img">
           <div className="project-banner-img-wrapper">
-            <ParallaxImage src="/work/joker.JPG" alt="" />
+            <ParallaxImage src={getImagePath("/work/joker.JPG")} alt="" />
           </div>
         </section>
 
@@ -46,31 +47,31 @@ const Project = () => {
           <div className="project-images-container">
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-1.jpg" alt="" />
+                <ParallaxImage src={getImagePath("/project/project-1.jpg")} alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-2.jpg" alt="" />
+                <ParallaxImage src={getImagePath("/project/project-2.jpg")} alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-3.jpg" alt="" />
+                <ParallaxImage src={getImagePath("/project/project-3.jpg")} alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-4.jpg" alt="" />
+                <ParallaxImage src={getImagePath("/project/project-4.jpg")} alt="" />
               </div>
             </div>
 
             <div className="project-img">
               <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-5.jpg" alt="" />
+                <ParallaxImage src={getImagePath("/project/project-5.jpg")} alt="" />
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@ const Project = () => {
 
           <div className="next-project-img">
             <div className="next-project-img-wrapper">
-              <ParallaxImage src="/work/mj.JPG" alt="" />
+              <ParallaxImage src={getImagePath("/work/mj.JPG")} alt="" />
             </div>
           </div>
 
