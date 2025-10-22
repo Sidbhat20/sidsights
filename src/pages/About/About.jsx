@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./About.css";
 
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
@@ -23,16 +23,9 @@ const About = () => {
   ];
 
   // Function to get 6 random unique images with proper paths
-  const getRandomImages = () => {
+  const toolImages = useMemo(() => {
     const shuffled = [...availableImages].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 6).map(img => getImagePath(img));
-  };
-
-  const [toolImages, setToolImages] = useState(getRandomImages());
-
-  useEffect(() => {
-    // Update images on component mount
-    setToolImages(getRandomImages());
   }, []);
 
   return (
