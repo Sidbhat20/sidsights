@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css";
 
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
@@ -10,46 +10,69 @@ import ReactLenis from "lenis/react";
 import Transition from "../../components/Transition/Transition";
 
 const About = () => {
+  // Array of available images from Sidsights folder
+  const availableImages = [
+    "/about/IMG_5909.JPG",
+    "/about/IMG_5916.JPG",
+    "/about/IMG_9857.JPG",
+    "/about/IMG_9854.JPG",
+    "/about/IMG_9849.JPG",
+    "/about/IMG_9843.JPG",
+    "/about/IMG_9983.JPG",
+  ];
+
+  // Function to get 6 random unique images
+  const getRandomImages = () => {
+    const shuffled = [...availableImages].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 6);
+  };
+
+  const [toolImages, setToolImages] = useState(getRandomImages());
+
+  useEffect(() => {
+    // Update images on component mount
+    setToolImages(getRandomImages());
+  }, []);
+
   return (
     <ReactLenis root>
       <div className="page about">
         <section className="about-header">
           <h1>Est</h1>
-          <h1>1997</h1>
+          <h1>2020</h1>
         </section>
 
         <section className="about-hero">
           <div className="about-hero-img">
-            <img src="/about/about-hero.jpg" alt="" />
+            <img src="/about/IMG_9850.JPG" alt="" />
           </div>
         </section>
+
 
         <section className="about-me-copy">
           <div className="about-me-copy-wrapper">
             <AnimatedCopy animateOnScroll={true} tag="h3">
-              I'm Nico Palmer — a filmmaker drawn to human stories, quiet
-              moments, and the visual language of emotion. My work spans short
-              films, experimental pieces, and cinematic visuals.
+              I'm Siddharth Bhat — a filmmaker, photographer, and a student of Computer Science and Mathematics.
+              Two worlds that might seem different, but for me, both chase the same thing — patterns, meaning, and truth.
             </AnimatedCopy>
 
             <AnimatedCopy animateOnScroll={true} tag="h3">
-              For me, filmmaking isn’t just about images — it’s about what those
-              images make us feel. I believe in subtlety, texture, and honesty
-              in storytelling.
+              My story with the camera began in 2020, following the quiet footsteps of my father — the one who always carried a lens. What started as imitation grew into instinct. Since then, I've photographed events, portraits, and stories that breathe between moments. I've directed ads, captured motion, and built narratives that live in silence as much as in sound.
             </AnimatedCopy>
 
             <AnimatedCopy animateOnScroll={true} tag="h3">
-              Every project is a new collaboration, a new challenge, and a new
-              chance to create something meaningful. If it moves someone, even
-              for a second — it's done its job.
+              For me, filmmaking isn't just a craft — it's a way of noticing. The flicker of light on someone's face, the way time pauses before emotion arrives.
+              Whether I'm behind a lens or in front of a screen full of code, I'm searching for the same thing: connection.
+            </AnimatedCopy>
+
+            <AnimatedCopy animateOnScroll={true} tag="h3">
+              Every frame, every cut, every story is a reminder — that even logic has rhythm, and even numbers can feel.
             </AnimatedCopy>
           </div>
-        </section>
-
-        <section className="services">
+        </section>        <section className="services">
           <div className="services-col">
             <div className="services-banner">
-              <img src="/about/services-banner.jpg" alt="" />
+              <img src="/about/sidprofile.jpg" alt="" />
             </div>
             <p className="primary">Crafted with Intention</p>
           </div>
@@ -114,20 +137,8 @@ const About = () => {
 
         <section className="fav-tools">
           <div className="fav-tools-header">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Daily Stack
-            </AnimatedCopy>
             <AnimatedCopy tag="h2" animateOnScroll={true} delay={0.25}>
-              Favourite Tools
-            </AnimatedCopy>
-            <AnimatedCopy
-              tag="p"
-              animateOnScroll={true}
-              className="secondary"
-              delay={0.5}
-            >
-              My favorite stack includes Framer, Figma, and other cutting-edge
-              technologies to ensure seamless and dynamic designs.
+              Sidsights
             </AnimatedCopy>
           </div>
 
@@ -135,47 +146,35 @@ const About = () => {
             <div className="fav-tools-list-row">
               <div className="fav-tool">
                 <div className="fav-tool-img">
-                  <img src="/about/tool-1.jpg" alt="" />
+                  <img src={toolImages[0]} alt="" />
                 </div>
-                <h4>DaVinci Resolve</h4>
-                <p className="primary sm">Color Grading</p>
               </div>
               <div className="fav-tool">
                 <div className="fav-tool-img">
-                  <img src="/about/tool-2.jpg" alt="" />
+                  <img src={toolImages[1]} alt="" />
                 </div>
-                <h4>Adobe Premiere Pro</h4>
-                <p className="primary sm">Video Editing</p>
               </div>
               <div className="fav-tool">
                 <div className="fav-tool-img">
-                  <img src="/about/tool-3.jpg" alt="" />
+                  <img src={toolImages[2]} alt="" />
                 </div>
-                <h4>Blackmagic Pocket</h4>
-                <p className="primary sm">Cinematic Shooting</p>
               </div>
             </div>
             <div className="fav-tools-list-row">
               <div className="fav-tool">
                 <div className="fav-tool-img">
-                  <img src="/about/tool-4.jpg" alt="" />
+                  <img src={toolImages[3]} alt="" />
                 </div>
-                <h4>ShotDeck</h4>
-                <p className="primary sm">Visual References</p>
               </div>
               <div className="fav-tool">
                 <div className="fav-tool-img">
-                  <img src="/about/tool-5.jpg" alt="" />
+                  <img src={toolImages[4]} alt="" />
                 </div>
-                <h4>Frame.io</h4>
-                <p className="primary sm">Remote Collaboration</p>
               </div>
               <div className="fav-tool">
                 <div className="fav-tool-img">
-                  <img src="/about/tool-6.jpg" alt="" />
+                  <img src={toolImages[5]} alt="" />
                 </div>
-                <h4>Celtx</h4>
-                <p className="primary sm">Scriptwriting Tool</p>
               </div>
             </div>
           </div>

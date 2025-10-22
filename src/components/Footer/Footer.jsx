@@ -8,13 +8,15 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-row">
         <div className="footer-contact">
-          <h3>
-            Let’s Collaborate <br />
-            film<span>@</span>nicopalmer.com
-          </h3>
+          <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <h3>
+              Let's Collaborate <br />
+              siddharthbhat20<span>@</span>gmail.com
+            </h3>
+          </Link>
 
           <p className="secondary">
-            From short films to full productions — I’m always open to creative
+            From short films to full productions — I'm always open to creative
             collaborations. Feel free to reach out anytime.
           </p>
 
@@ -43,22 +45,16 @@ const Footer = () => {
             <span>Contact</span>
             <span>&#8594;</span>
           </Link>
-
-          <Link to="/faq" className="footer-nav-item">
-            <span>FAQ</span>
-            <span>&#8594;</span>
-          </Link>
         </div>
       </div>
       <div className="footer-row">
         <div className="footer-header">
-          <h1>Nico</h1>
-          <h1>Palmer</h1>
+          <h1>Siddharth</h1>
+          <h1>Bhat</h1>
         </div>
 
         <div className="footer-copyright-line">
-          <p className="primary sm">&copy; Nico Palmer 2025</p>
-          <p className="primary sm">Website Template by Codegrid</p>
+          <p className="primary sm">&copy; Siddharth Bhat 2025</p>
         </div>
       </div>
     </div>

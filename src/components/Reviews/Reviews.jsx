@@ -14,6 +14,15 @@ const Reviews = () => {
   const animationInProgressRef = useRef(false);
   const hasInitialClickRef = useRef(false);
 
+  // Auto-rotate reviews every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveReview((prev) => (prev + 1) % reviews.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   useEffect(() => {
     if (initialRenderRef.current) {
       initialRenderRef.current = false;
@@ -125,12 +134,6 @@ const Reviews = () => {
     }
   }, [activeReview]);
 
-  const handleReviewClick = (index) => {
-    if (index !== activeReview && !animationInProgressRef.current) {
-      setActiveReview(index);
-    }
-  };
-
   return (
     <section className="reviews" ref={reviewsContainerRef}>
       <h3 id="quote-icon">
@@ -140,20 +143,6 @@ const Reviews = () => {
       <div className="review-item">
         <h4 id="review-copy">{reviews[activeReview].copy}</h4>
         <h4 id="review-author">- {reviews[activeReview].author}</h4>
-      </div>
-
-      <div className="reviews-list">
-        {reviews.map((review, index) => (
-          <div
-            key={review.id}
-            className={`review-thumbnail ${
-              index === activeReview ? "active" : ""
-            }`}
-            onClick={() => handleReviewClick(index)}
-          >
-            <img src={review.image} alt={`Review by ${review.author}`} />
-          </div>
-        ))}
       </div>
     </section>
   );

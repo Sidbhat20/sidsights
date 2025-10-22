@@ -18,64 +18,26 @@ const Project = () => {
             animateOnScroll={false}
             className="primary sm"
           >
-            Short film on self-discovery
+            Moments
           </AnimatedCopy>
           <AnimatedCopy tag="h2" delay={1}>
-            Fragments of Light
+            JOKER
           </AnimatedCopy>
         </section>
 
         <section className="project-banner-img">
           <div className="project-banner-img-wrapper">
-            <ParallaxImage src="/project/banner.jpg" alt="" />
+            <ParallaxImage src="/work/joker.JPG" alt="" />
           </div>
         </section>
 
         <section className="project-details">
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Overview
+              Captured by
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              A visual meditation on identity, *Fragments of Light* explores the
-              quiet journey of self-discovery through minimalism, mood, and
-              motion.
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Year
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              2024
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Category
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Short Film
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Running Time
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              6:30
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Directed by
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
+              Siddharth Bhat
             </AnimatedCopy>
           </div>
         </section>
@@ -114,56 +76,9 @@ const Project = () => {
           </div>
         </section>
 
-        <section className="project-details">
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Editor
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Sound Design
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Elena Brooks
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Art Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Milo Vance
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Producer
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Asha Lennox
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-        </section>
-
         <section className="next-project">
           <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-            02 - 05
+            02 - 04
           </AnimatedCopy>
           <AnimatedCopy tag="h3" animateOnScroll={true}>
             Next
@@ -171,12 +86,12 @@ const Project = () => {
 
           <div className="next-project-img">
             <div className="next-project-img-wrapper">
-              <ParallaxImage src="/work/work-2.jpg" alt="" />
+              <ParallaxImage src="/work/mj.JPG" alt="" />
             </div>
           </div>
 
           <AnimatedCopy tag="h4" animateOnScroll={true}>
-            Market Pulse
+            Micheal Jackson
           </AnimatedCopy>
         </section>
       </div>

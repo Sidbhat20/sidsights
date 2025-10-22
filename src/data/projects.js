@@ -1,33 +1,27 @@
 const projects = [
   {
     id: 1,
-    title: "Fragments of Light",
+    title: "JOKER",
     description: "Short film on self-discovery",
-    image: "/work/work-1.jpg",
+    image: "/work/joker.JPG",
   },
   {
     id: 2,
-    title: "Market Pulse",
-    description: "Street life, raw and real",
-    image: "/work/work-2.jpg",
+    title: "Micheal Jackson",
+    description: "Visual ode to silence",
+    image: "/work/mj.JPG",
   },
   {
     id: 3,
-    title: "The Stillness Project",
-    description: "Visual ode to silence",
-    image: "/work/work-3.jpg",
+    title: "Chroma/City",
+    description: "Urban color in motion",
+    image: "/work/geo.JPG",
   },
   {
     id: 4,
-    title: "Chroma/City",
-    description: "Urban color in motion",
-    image: "/work/work-4.jpg",
-  },
-  {
-    id: 5,
     title: "Echoes of Silence",
     description: "Grief told through memory",
-    image: "/work/work-5.jpg",
+    image: "/work/echos .jpg",
   },
 ];
 

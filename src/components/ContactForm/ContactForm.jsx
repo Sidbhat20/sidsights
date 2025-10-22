@@ -29,7 +29,15 @@ const ContactForm = () => {
 
           <div className="contact-form-availability">
             <p className="primary sm">Available for Freelance</p>
-            <p className="primary sm">Clients worldwide</p>
+            <a 
+              href="https://wa.me/919148751879" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="primary sm"
+              style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}
+            >
+              +91 9148751879
+            </a>
           </div>
         </div>
 
@@ -43,11 +51,17 @@ const ContactForm = () => {
           </div>
 
           <div className="form-item">
-            <textarea type="text" rows={6} placeholder="Message" />
+            <textarea type="text" rows={6} placeholder="Message" id="messageText" />
           </div>
 
           <div className="form-item">
-            <button className="btn">Send Message</button>
+            <a 
+              href="mailto:siddharthbhat20@gmail.com?subject=Let's Collaborate&body=" 
+              className="btn"
+              style={{ textDecoration: 'none', display: 'inline-block' }}
+            >
+              Send Message
+            </a>
           </div>
         </div>
       </div>
